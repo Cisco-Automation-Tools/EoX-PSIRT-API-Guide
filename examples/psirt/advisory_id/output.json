@@ -1,0 +1,32 @@
+{
+    "advisories": [
+        {
+            "advisoryId": "cisco-sa-sna-xss-NXOxDhRQ",
+            "advisoryTitle": "Cisco Secure Network Analytics Cross-Site Scripting Vulnerability",
+            "bugIDs": [
+                "CSCwa15377"
+            ],
+            "ipsSignatures": [
+                "NA"
+            ],
+            "cves": [
+                "CVE-2022-20663"
+            ],
+            "cvrfUrl": "https://tools.cisco.com/security/center/contentxml/CiscoSecurityAdvisory/cisco-sa-sna-xss-NXOxDhRQ/cvrf/cisco-sa-sna-xss-NXOxDhRQ_cvrf.xml",
+            "cvssBaseScore": "6.1",
+            "cwe": [
+                "CWE-79"
+            ],
+            "firstPublished": "2022-01-12T16:00:00",
+            "lastUpdated": "2022-01-12T16:00:00",
+            "status": "Final",
+            "version": "1.0",
+            "productNames": [
+                "Cisco Secure Network Analytics "
+            ],
+            "publicationUrl": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sna-xss-NXOxDhRQ",
+            "sir": "Medium",
+            "summary": "\r\n<p>A vulnerability in the web-based management interface of Cisco&nbsp;Secure Network Analytics, formerly Stealthwatch Enterprise, could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface.</p>\r\n<p>The vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of the affected software. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</p>\r\n<p>Cisco&nbsp;has released software updates that address this vulnerability. There are no workarounds that address this vulnerability.</p>\r\n<p>This advisory is available at the following link:<br>\r\n<a href=\"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sna-xss-NXOxDhRQ\">https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sna-xss-NXOxDhRQ</a></p>\r\n<p><strong>Attention</strong>: Simplifying the Cisco&nbsp;portfolio includes the renaming of security products under one brand: Cisco&nbsp;Secure. For more information, see <a href=\"https://www.cisco.com/c/en/us/products/security/secure-names.html\">Meet Cisco&nbsp;Secure</a>.</p>\r\n"
+        }
+    ]
+}

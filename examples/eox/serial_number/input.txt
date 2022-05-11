@@ -1,0 +1,4 @@
+GET url: https://api.cisco.com/supporttools/eox/rest/5/EOXBySerialNumber/{pageIndex}/{serialNumber}
+version: 5
+pageIndex: 1
+serialNumbers: FHK0933224R

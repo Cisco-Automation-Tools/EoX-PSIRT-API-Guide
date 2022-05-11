@@ -1,0 +1,2 @@
+GET url: https://api.cisco.com/security/advisories/product?product={product}
+product: IOS XR

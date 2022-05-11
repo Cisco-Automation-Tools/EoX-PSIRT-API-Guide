@@ -1,0 +1,4 @@
+GET url: https://api.cisco.com/supporttools/eox/rest/5/EOXByProductID/{pageIndex}/{productID}
+version: 5
+pageIndex: 1
+productIDs: CISCO1811W-AG-A/K9,WIC-1T=

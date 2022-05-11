@@ -1,0 +1,1025 @@
+{
+	"info": {
+		"_postman_id": "2a0ff0d4-95a1-4489-8eea-b3eb37cc56de",
+		"name": "PSIRT API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Query by Advisory ID",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "wW7NWcTaXPR9TjJWIgl63G3ZhVae",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/advisory/:advisory_id",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"advisory",
+						":advisory_id"
+					],
+					"variable": [
+						{
+							"key": "advisory_id",
+							"value": "cisco-sa-sna-xss-NXOxDhRQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return All Advisories",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "MbUj4msvi2yjuATAsOCyXty3TkBD",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/all",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by CVE ID",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "wW7NWcTaXPR9TjJWIgl63G3ZhVae",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/cve/:cve_id",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"cve",
+						":cve_id"
+					],
+					"variable": [
+						{
+							"key": "cve_id",
+							"value": "CVE-2019-12646"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Latest Advisories",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/latest/:number",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"latest",
+						":number"
+					],
+					"variable": [
+						{
+							"key": "number",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by Product Name",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "wW7NWcTaXPR9TjJWIgl63G3ZhVae",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/product?product=IOS XR",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"product"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "IOS XR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by Security Impact Rating (SIR)",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "wW7NWcTaXPR9TjJWIgl63G3ZhVae",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/severity/:severity/firstpublished?startDate=2021-01-01&endDate=2021-12-31",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"severity",
+						":severity",
+						"firstpublished"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2021-12-31"
+						}
+					],
+					"variable": [
+						{
+							"key": "severity",
+							"value": "high"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by Advisory Year",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/year/:year",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"year",
+						":year"
+					],
+					"variable": [
+						{
+							"key": "year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by IOS Version",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/ios?version=15.5(1)S2",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"ios"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "15.5(1)S2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by IOSXE Version",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/iosxe?version=3.13.3S",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"iosxe"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "3.13.3S"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by NXOS (Standalone) Version",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/nxos?version=8.3(1)",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"nxos"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "8.3(1)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by NXOS (ACI mode) Version",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/aci?version=14.1(2u)",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"aci"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "14.1(2u)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pagination",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "PSIRT API Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://cloudsso.cisco.com/as/token.oauth2",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "t7s2SQo6yzsahWOuMhPM2PmTlO4O",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.cisco.com/security/advisories/severity/critical?pageIndex=&pageSize=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"security",
+						"advisories",
+						"severity",
+						"critical"
+					],
+					"query": [
+						{
+							"key": "pageIndex",
+							"value": ""
+						},
+						{
+							"key": "pageSize",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "psirt_api_cid",
+			"value": "9ptexeqwpw4edhsasxk5x5pe"
+		},
+		{
+			"key": "psirt_api_sec",
+			"value": "ZQZeZM6kEgvQrAtpEKBSqh8D"
+		}
+	]
+}

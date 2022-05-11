@@ -1,0 +1,5 @@
+GET url: https://api.cisco.com/supporttools/eox/rest/5/EOXByDates/{pageIndex}/{startDate}/{endDate}
+version: 5
+pageIndex: 1
+startDate: 2021-01-01
+endDate: 2021-12-31

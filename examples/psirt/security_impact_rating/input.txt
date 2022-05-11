@@ -1,0 +1,4 @@
+GET url: https://api.cisco.com/security/advisories/severity/{severity}/firstpublished?startDate={startDate}&endDate={endDate}
+startDate:2021-01-01
+endDate: 2021-12-31
+severity: high

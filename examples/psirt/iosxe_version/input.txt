@@ -1,0 +1,2 @@
+GET url: https://api.cisco.com/security/advisories/iosxe?version={version}
+version: 3.13.3S

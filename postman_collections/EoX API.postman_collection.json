@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "1d59868f-ebc3-44f5-bda8-c27eb0d58c2d",
+		"name": "EoX API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "supporttools/eox",
+			"item": [
+				{
+					"name": "Query by Start and End Date",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "EBloUQkwV5Pj2dTXDcF6WF27NwJP",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "EoX API Token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://cloudsso.cisco.com/as/token.oauth2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.cisco.com/supporttools/eox/rest/:version/EOXByDates/:pageIndex/:startDate/:endDate?eoxAttrib=&responseencoding=&",
+							"protocol": "https",
+							"host": [
+								"api",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"supporttools",
+								"eox",
+								"rest",
+								":version",
+								"EOXByDates",
+								":pageIndex",
+								":startDate",
+								":endDate"
+							],
+							"query": [
+								{
+									"key": "eoxAttrib",
+									"value": ""
+								},
+								{
+									"key": "responseencoding",
+									"value": ""
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "5"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "startDate",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2021-12-31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by Product ID(s)",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "EoX API Token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://cloudsso.cisco.com/as/token.oauth2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.cisco.com/supporttools/eox/rest/:version/EOXByProductID/:pageIndex/:productIDs?responseencoding=&",
+							"protocol": "https",
+							"host": [
+								"api",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"supporttools",
+								"eox",
+								"rest",
+								":version",
+								"EOXByProductID",
+								":pageIndex",
+								":productIDs"
+							],
+							"query": [
+								{
+									"key": "responseencoding",
+									"value": ""
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "5"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "productIDs",
+									"value": "CISCO1811W-AG-A/K9,WIC-1T="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by Serial Number(s)",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "EoX API Token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://cloudsso.cisco.com/as/token.oauth2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.cisco.com/supporttools/eox/rest/:version/EOXBySerialNumber/:pageIndex/:serialNumbers?responseencoding=&",
+							"protocol": "https",
+							"host": [
+								"api",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"supporttools",
+								"eox",
+								"rest",
+								":version",
+								"EOXBySerialNumber",
+								":pageIndex",
+								":serialNumbers"
+							],
+							"query": [
+								{
+									"key": "responseencoding",
+									"value": ""
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "5"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								},
+								{
+									"key": "serialNumbers",
+									"value": "FHK0933224R"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by Software Release String(s)",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "EoX API Token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://cloudsso.cisco.com/as/token.oauth2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.cisco.com/supporttools/eox/rest/:version/EOXBySWReleaseString/:pageIndex?responseencoding=&input1=12.2,IOS&input2=&input3=&input4=&input5=&",
+							"protocol": "https",
+							"host": [
+								"api",
+								"cisco",
+								"com"
+							],
+							"path": [
+								"supporttools",
+								"eox",
+								"rest",
+								":version",
+								"EOXBySWReleaseString",
+								":pageIndex"
+							],
+							"query": [
+								{
+									"key": "responseencoding",
+									"value": ""
+								},
+								{
+									"key": "input1",
+									"value": "12.2,IOS"
+								},
+								{
+									"key": "input2",
+									"value": ""
+								},
+								{
+									"key": "input3",
+									"value": ""
+								},
+								{
+									"key": "input4",
+									"value": ""
+								},
+								{
+									"key": "input5",
+									"value": ""
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "5"
+								},
+								{
+									"key": "pageIndex",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "supporttools/eox"
+		}
+	],
+	"variable": [
+		{
+			"key": "cid_eox",
+			"value": "x4tth6jvb6xcprjhsnk3vtdc"
+		},
+		{
+			"key": "eox_api_sec",
+			"value": "873xkqY5HMX2dn64KnntdWFe"
+		},
+		{
+			"key": "eox_api_cid",
+			"value": "x4tth6jvb6xcprjhsnk3vtdc"
+		}
+	]
+}

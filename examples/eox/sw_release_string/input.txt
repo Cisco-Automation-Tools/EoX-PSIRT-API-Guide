@@ -1,0 +1,4 @@
+GET url: https://api.cisco.com/supporttools/eox/rest/5/EOXBySWReleaseString/{pageIndex}/{input1}
+version: 5
+pageIndex: 1
+input1 (software release string): 12.2,IOS

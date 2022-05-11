@@ -1,0 +1,2 @@
+GET url: https://api.cisco.com/security/advisories/advisory/{advisory_id}
+advisory_id: cisco-sa-sna-xss-NXOxDhRQ
